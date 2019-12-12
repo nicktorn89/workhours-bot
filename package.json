@@ -1,0 +1,41 @@
+{
+  "name": "workhours-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run dev",
+    "dev": "nodemon",
+    "prod": "rm -rf ./build/ && tsc && node build/server.js",
+    "tslint": "tslint src/**/*.ts",
+    "build": "rm -rf ./build/ && tsc",
+    "debug": "rm -rf ./build/ && tsc && node --inspect build/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.0.0",
+    "fs": "0.0.1-security",
+    "node-telegram-bot-api": "^0.40.0",
+    "path": "^0.12.7",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4",
+    "toggl-api": "^1.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^12.7.12",
+    "@types/node-telegram-bot-api": "^0.40.0",
+    "@types/request": "^2.48.3",
+    "eslint": "^6.5.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "nodemon": "^1.19.1",
+    "ts-node": "^8.4.1",
+    "tslint": "^5.20.0",
+    "tslint-config-airbnb-base": "^0.3.0",
+    "typescript": "^3.6.4"
+  }
+}
