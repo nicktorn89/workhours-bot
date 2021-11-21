@@ -5,7 +5,10 @@ import { getWorkingDaysCount, roundHours, sumAllHours } from './utils';
 require('dotenv/config');
 
 const TogglClient = require('toggl-api');
-const toggle = new TogglClient({ apiToken: process.env.TOGGL_TOKEN });
+const toggle = new TogglClient({
+  apiToken: process.env.TOGGL_TOKEN,
+  apiUrl: 'https://api.track.toggl.com',
+});
 
 const TelegramBot = require('node-telegram-bot-api');
 
